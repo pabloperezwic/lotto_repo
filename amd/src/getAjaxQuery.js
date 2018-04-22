@@ -14,8 +14,9 @@ define(['jquery', 'sortThisTable'],
                 $(response.last.numbers).each(function(){
                     $('.numbersJackpot').append('<li>' + this + '</li>');
                 });
-
-                //$('.numbersJackpot').append();
+                $(response.last.euroNumbers).each(function(){
+                    $('.numbersJackpot').append('<li class="euronumbers">' + this + '</li>');
+                });
                 var jsonPrizes = response.last.odds;
                 for(key in jsonPrizes) {
                     if (key.substring(4) > 0) {
