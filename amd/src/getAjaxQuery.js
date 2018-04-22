@@ -5,6 +5,7 @@ define(['jquery', 'sortThisTable'],
 
             var loaddata = 'data.json';
             //url:'https://media.lottoland.com/api/drawings/euroJackpot',
+            // To avoid use a proxy I´ve downloaded JSON to parse.
             $.ajax({
                 url: loaddata,
                 context: document.body
