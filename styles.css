@@ -1,0 +1,43 @@
+.lotto{
+    font-family: sans-serif;
+}
+.numbersJackpot{
+    display: inline;
+    padding: 0;
+}
+.numbersJackpot li{
+    display: inline-block;
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #d9deda;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+.numbersJackpot li.euronumbers{
+    border: 1px solid #ca7f26;
+}
+#winnersTable {
+    border: 1px solid #d9deda;
+    background-color: transparent;
+    font-size: 14px;
+    margin-bottom: 21px;
+    width: 100%;
+}
+#winnersTable th{
+    font-weight: 500;
+    padding: 14px 21px;
+    text-align: left;
+    font-weight: bold;
+}
+#winnersTable tr{
+    border-bottom: 1px solid #d9deda;
+}
+#winnersTable tr td{
+    display: table-cell;
+    line-height: 1;
+    padding: 14px 21px;
+}
