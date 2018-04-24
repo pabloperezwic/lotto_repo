@@ -1,4 +1,4 @@
-define(['jquery', 'sortThisTable'],
+define(['jquery', 'sortThisTable.min'],
     function($, shortThisTable) {
 
         var getAjaxQuery = function() {
@@ -10,7 +10,6 @@ define(['jquery', 'sortThisTable'],
                 url: loaddata,
                 context: document.body
             }).done(function(response) {
-                console.log(response);
                 $('.day').append(response.last.date.full);
                 $(response.last.numbers).each(function(){
                     $('.numbersJackpot').append('<li>' + this + '</li>');
@@ -23,10 +22,10 @@ define(['jquery', 'sortThisTable'],
                     if (key.substring(4) > 0) {
                         $('[data-main="table"] tr:last').after(
                             '<tr>'  +
-                                '<td>' + key.substring(4) +  '</td>' +
-                                '<td>' + jsonPrizes[key].winners + '</td>' +
-                                '<td>' + jsonPrizes[key].specialPrize + '</td>' +
-                                '<td>' + '€' + jsonPrizes[key].prize + '</td>' +
+                            '<td>' + key.substring(4) +  '</td>' +
+                            '<td>' + jsonPrizes[key].winners + '</td>' +
+                            '<td>' + jsonPrizes[key].specialPrize + '</td>' +
+                            '<td>' + '€' + jsonPrizes[key].prize + '</td>' +
                             '</tr>'
                         );
                     }
@@ -40,6 +39,19 @@ define(['jquery', 'sortThisTable'],
         return getAjaxQuery;
 
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
